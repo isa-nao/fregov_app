@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "405369884153",
+    "project_id": "fregov-app",
+    "storage_bucket": "fregov-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405369884153:android:3bc7a742ffb74d8b4ac128",
+        "android_client_info": {
+          "package_name": "com.fregov.fregov_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405369884153-61acgepl2bh79rabaskre0hcvsvs0117.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATuX1EGl02aKqYNgokoReqQZ2EbnSIyY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405369884153-61acgepl2bh79rabaskre0hcvsvs0117.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "405369884153-7jd5pg1l1a7rjr8p1gvtsjd9t7hi5hml.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fregov.fregovApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
