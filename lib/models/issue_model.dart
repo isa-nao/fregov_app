@@ -1,22 +1,17 @@
 import 'package:flutter/foundation.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+part 'issue_model.freezed.dart';
+part 'issue_model.g.dart';
 
-@immutable
-class Issue {
-  const Issue({
-    required this.cityName,
-    required this.issueTitle,
-    required this.updateTime,
-    required this.detailUrl,
-  });
+@freezed
+class Issue with _$Issue {
+  const factory Issue({
+    required String cityName,
+    required String issueTitle,
+    required String updateTime,
+    required String detailUrl,
+  }) = _Issue;
 
-  final String cityName, issueTitle, updateTime, detailUrl;
-
-  Issue copyWith({String? cityName, issueTitle, updateTime, detailUrl}) {
-    return Issue(
-      cityName: cityName ?? this.cityName,
-      issueTitle: issueTitle ?? this.issueTitle,
-      updateTime: updateTime ?? this.updateTime,
-      detailUrl: detailUrl ?? this.detailUrl,
-    );
-  }
+  factory Issue.fromJson(Map<String, dynamic> json)
+    => _$IssueFromJson(json);
 }
