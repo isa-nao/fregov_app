@@ -59,9 +59,8 @@ class MyHomePageState extends ConsumerState<MyHomePage> {
       title: ref.watch(searchBoxProvider) 
       ? SearchBox() 
       : Image.asset(
-          'asset/images/dog-illust.jpg',
-          height: 40,
-          width: 40,
+          'assets/images/fregov_splash.png',
+          height: 150,
         ),
       actions: ref.watch(searchBoxProvider) 
         ? [IconButton(
@@ -71,7 +70,7 @@ class MyHomePageState extends ConsumerState<MyHomePage> {
             }
           )] 
         : [IconButton(
-            icon: const Icon(Icons.search, size: 35),
+            icon: const Icon(Icons.search),
             onPressed: () {
               ref.read(searchBoxProvider.notifier).update((state) => true);
             }
